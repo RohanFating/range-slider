@@ -1,6 +1,7 @@
 # RangeSliderApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+This application is an range slider application where you have to provide min and max range for your slider. Then play with your range slider.
 
 ## Set Up
  1. Clone this project
