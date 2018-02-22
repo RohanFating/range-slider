@@ -1,0 +1,19 @@
+<div class="slider">
+  <h2> Range Slider </h2>
+  <br/>
+  <div class="row">
+    <div class="slider__bar col-12" #sliberBar (click)="onSliderClick($event)">
+      <div class="slider__current__bar" [style.width]="currentPositionWitdth" (click)="onSliderClick($event)"></div>
+      <div class="slider__amount" style="left:0;">
+          <b>0</b>
+        </div>
+      <div class="slider__amount" style="left:50%">
+        <b>{{currentAmount>0? currentAmount: ''}}</b>
+      </div>
+      <div class="slider__amount" style="left:99%;">
+        <b>{{max}}</b>
+      </div>
+      <div class="slider__position" [style.left]="currentPositionWitdth" draggable="true" (drag)="onSliderClick($event)" (dragend)="onSliderClick($event)"></div>
+    </div>
+  </div>
+</div>

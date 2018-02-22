@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Range Slider App!
+  </h1>
+</div>
+
+<div class="row">
+  <div class="col-12" style="margin:20px 40px;">
+      <div>Min: <input type="text" [(ngModel)]="min" name="min" placeholder="Enter number only"/></div>
+      <div>Max: <input type="text" [(ngModel)]="max" name="max" placeholder="Enter number only"/></div>
+    <app-slider [min]="min" [max]="max"></app-slider>
+  </div>
+</div>
